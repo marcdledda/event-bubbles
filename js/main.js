@@ -1,1 +1,29 @@
-console.log("JS TEST")
+console.log("JS TEST");
+
+let header = document.getElementById("page-header");
+let saywhat = document.getElementById("output");
+
+function handleHeaderMouseEvent (event) {
+    // console.log("event", event.currentTarget);
+}
+
+function handleHeaderMouseOut (event) {
+
+}
+
+
+let listItems = document.getElementsByClassName("list-item");
+for (var i = 0; i < listItems.length; i++) {
+    listItems.item(i).addEventListener("click", handleClick);
+}
+
+
+function handleClick (MouseEvent) {
+    let elementText = MouseEvent.target.innerHTML;
+    saywhat.innerHTML = "hummm, " + elementText + " clicked you have";
+}
+
+
+header.addEventListener("mouseover", handleHeaderMouseEvent);
+header.addEventListener("mouseout", handleHeaderMouseOut);
+
