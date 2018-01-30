@@ -28,3 +28,18 @@ function handleClick (MouseEvent) {
 header.addEventListener("mouseover", handleHeaderMouseEvent);
 header.addEventListener("mouseout", handleHeaderMouseOut);
 
+var yodaImage = document.getElementById("theYoda");
+
+document.getElementById("change-color").addEventListener("click", () => {
+    yodaImage.classList.toggle("flashy");
+})
+
+document.getElementById("force-lots-of")
+  .addEventListener("click", function() {
+  yodaImage.classList.toggle("moreforce");
+});
+
+document.getElementById("add-border")
+  .addEventListener("click", function() {
+  yodaImage.classList.toggle("bordered");
+});
