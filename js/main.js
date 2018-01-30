@@ -5,10 +5,11 @@ let saywhat = document.getElementById("output");
 
 function handleHeaderMouseEvent (event) {
     // console.log("event", event.currentTarget);
+    saywhat.innerHTML = "The force is strong with this mouse";
 }
 
 function handleHeaderMouseOut (event) {
-
+    saywhat.innerHTML = "Rememeber... the Force is will be with you always.";
 }
 
 
